@@ -10,9 +10,10 @@ textarea {
     line-height: $font__line-height-body;
 
     @include breakpoints(large) {
-		@include font-size(1);
-		// font-size: rem-calc(20);
-	}
+      @include font-size(1);
+      // font-size: rem-calc(20);
+  }
+  
 }
 
 @import "headings";

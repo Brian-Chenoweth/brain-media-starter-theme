@@ -876,6 +876,66 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-header {
+	position: relative;
+	padding: 1em;
+	font-family: "PT Serif", Georgia, Cambria, "Times New Roman", Times, serif;
+	color: #fff;
+	background-color: #002254;
+}
+
+@media all and (min-width: 1025px) {
+	.site-header {
+		padding: 1em 2em;
+	}
+}
+
+.site-branding {
+	min-height: 65px;
+}
+
+.site-title {
+	margin: 0;
+	padding: 0;
+	font-size: 1.6em;
+	font-weight: 900;
+	line-height: 1em;
+}
+
+.site-title a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-title a:hover, .site-title a:focus {
+	text-decoration: underline;
+}
+
+.site-description {
+	margin: 0;
+	font-size: .93em;
+	font-style: italic;
+	font-weight: 100;
+}
+
+@media all and (min-width: 641px) {
+	.site-header {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
+	}
+	.site-branding {
+		width: 35%;
+	}
+	.site-navigation {
+		width: 55%;
+	}
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
