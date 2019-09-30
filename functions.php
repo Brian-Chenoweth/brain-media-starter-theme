@@ -74,11 +74,12 @@ if ( ! function_exists( 'brain_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 65,
+			'width'       => 65,
 			'flex-width'  => true,
-			'flex-height' => true,
 		) );
+
+
 	}
 endif;
 add_action( 'after_setup_theme', 'brain_setup' );

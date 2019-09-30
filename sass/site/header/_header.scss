@@ -22,6 +22,27 @@
 
 .site-branding {
     min-height: 65px;
+    display: flex;
+    flex: 1 0 auto;
+    align-items: center;
+}
+
+.custom-logo-link {
+    margin-right: 1em;
+    
+    img {
+        display: block;
+        height: 65px;
+        width: auto;
+    }
+    
+}
+
+.site-branding-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65px;
 }
 
 .site-title {
@@ -50,7 +71,7 @@
     font-weight: 100;
 }
 
-@include breakpoints(medium) {
+@include breakpoints(large) {
     .site-header {
         display: flex;
         justify-content: space-between;
