@@ -46,6 +46,7 @@ if ( ! function_exists( 'brain_setup' ) ) :
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'brain' ),
 			'secondary' => esc_html__( 'Secondary', 'brain' ),
+			'social' => esc_html__( 'Social Media', 'brain' ),
 		) );
 
 		/*
@@ -150,7 +151,12 @@ function brain_scripts() {
 
 	wp_enqueue_style( 'brain-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'brain-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'brain-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+
+	wp_localize_script('brain-navigation', 'brainScreenReaderText', array(
+		'expand' => __('Expand Child Menu', 'brain'),
+		'collapse' => __('Collapse Child Menu', 'brain'),
+	));
 
 	wp_enqueue_script( 'brain-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
