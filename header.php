@@ -34,16 +34,10 @@
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
 				?>
 				<div class="site-brading-text">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<?php
-				else :
-					?>
 					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php
-				endif;
 				$brain_description = get_bloginfo( 'description', 'display' );
 				if ( $brain_description || is_customize_preview() ) :
 					?>
@@ -64,5 +58,3 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
-
-<h1>another test</h1>
