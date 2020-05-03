@@ -24,16 +24,16 @@
 		</nav>
 
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'brain' ) ); ?>">
+			<!-- <a href="<?php /* echo esc_url( __( 'https://wordpress.org/', 'brain' ) ); */ ?>"> -->
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'brain' ), 'WordPress' );
+				/* printf( esc_html__( 'Proudly powered by %s', 'brain' ), 'WordPress' ); */
 				?>
-			</a>
-			<span class="sep"> | </span>
+			<!-- </a> -->
+			<!-- <span class="sep"> | </span> -->
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'brain' ), 'brain', '<a href="https://brainmediaco.com/">Brian M. Chenoweth</a>' );
+				/*printf( esc_html__( 'Theme: %1$s by %2$s.', 'brain' ), 'brain', '<a href="https://brainmediaco.com/">Brian M. Chenoweth</a>' );*/
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
